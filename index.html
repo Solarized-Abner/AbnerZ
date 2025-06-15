@@ -1,27 +1,99 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>AbnerZ</title>
-        <link rel="stylesheet" href="./assets/css/style.css" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <title>Abner's Personal Website</title>
     </head>
-
     <body>
-        <div class="topnav" id="myTopnav">
-            <a href="#home" class="active">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-            <a href="" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
+        <header class="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a href="#" class="nav__logo">
+                        <i class="ri-planet-line"></i> AbnerZ
+                    </a>
 
-        <div style="padding-left: 16px">
-            <h2>This is my own website</h2>
-            <p>For more info please keep reading</p>
-        </div>
-        <script src="./assets/js/script.js"></script>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__burger"></i>
+                        <i class="ri-close-line nav__close"></i>
+                    </div>
+                </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li><a href="#" class="nav__link">Home</a></li>
+
+                        <li><a href="#" class="nav__link">Info</a></li>
+                        <li class="dropdown__item">
+                            <div class="nav__link">
+                                Projects
+                                <i
+                                    class="ri-arrow-down-s-line dropdown__arrow"
+                                ></i>
+                            </div>
+                            <ul class="dropdown__menu">
+                                <li>
+                                    <a href="#" class="dropdown__link">
+                                        <i class="ri-pie-chart-line"></i>
+                                        Overview
+                                    </a>
+                                </li>
+                                <li class="dropdown__subitem">
+                                    <div class="dropdown__link">
+                                        <i class="ri-bar-chart-line"></i>
+                                        Plane
+                                        <i
+                                            class="ri-add-line dropdown__add"
+                                        ></i>
+                                    </div>
+                                    <ul class="dropdown__submenu">
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="dropdown__sublink"
+                                            >
+                                                <i
+                                                    class="ri-file-list-line"
+                                                ></i>
+                                                Build Processes
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="dropdown__sublink"
+                                            >
+                                                <i class="ri-cash-line"></i>
+                                                3D Module
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="dropdown__sublink"
+                                            >
+                                                <i class="ri-refund-2-line"></i>
+                                                Tech
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown__link">
+                                        <i class="ri-arrow-up-down-line"></i>
+                                        Self Driving
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
