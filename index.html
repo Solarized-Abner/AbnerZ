@@ -1,106 +1,60 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="./assets/css/styles.css" />
-        <title>Abner's Personal Website</title>
-    </head>
-    <body>
-        <header class="header">
-            <nav class="nav container">
-                <div class="nav__data">
-                    <a href="#" class="nav__logo">
-                        <i class="ri-rocket-2-line"></i> AbnerZ
-                    </a>
-
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="ri-menu-line nav__burger"></i>
-                        <i class="ri-close-line nav__close"></i>
-                    </div>
-                </div>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li><a href="#" class="nav__link">Home</a></li>
-
-                        <li><a href="#" class="nav__link">Info</a></li>
-                        <li class="dropdown__item">
-                            <div class="nav__link">
-                                Projects
-                                <i
-                                    class="ri-arrow-down-s-line dropdown__arrow"
-                                ></i>
-                            </div>
-                            <ul class="dropdown__menu">
-                                <li>
-                                    <a href="#" class="dropdown__link">
-                                        <i class="ri-pie-chart-line"></i>
-                                        Overview
-                                    </a>
-                                </li>
-                                <li class="dropdown__subitem">
-                                    <div class="dropdown__link">
-                                        <i class="ri-plane-line"></i>
-                                        Plane
-                                        <i
-                                            class="ri-add-line dropdown__add"
-                                        ></i>
-                                    </div>
-                                    <ul class="dropdown__submenu">
-                                        <li>
-                                            <a
-                                                href="#"
-                                                class="dropdown__sublink"
-                                            >
-                                                <i
-                                                    class="ri-checkbox-multiple-line"
-                                                ></i>
-                                                Build Processes
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="#"
-                                                class="dropdown__sublink"
-                                            >
-                                                <i
-                                                    class="ri-quill-pen-line"
-                                                ></i>
-                                                3D Module
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="#"
-                                                class="dropdown__sublink"
-                                            >
-                                                <i class="ri-macbook-line"></i>
-                                                Tech
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#" class="dropdown__link">
-                                        <i class="ri-roadster-line"></i>
-                                        Self Driving
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <info class="lobby-info">
-            <div class="lobby-info-divider">
-                <img />
-            </div>
-        </info>
-        <script src="assets/js/main.js"></script>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abner's Portfolio Website</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+  
+  <main class="blocks-container">
+    <a class="block" href="./about.html">
+      <div class="block-inner">
+        <div class="block-front">
+          <span>Info</span>
+        </div>
+        <div class="block-back">
+          <span class="normal-info">This is Block 1 info.</span>
+          <span class="easter-egg-message">You found the Easter Egg!</span>
+        </div>
+      </div>
+    </a>
+    <a class="block" href="./projects.html">
+      <div class="block-inner">
+        <div class="block-front">
+          <span>Projects</span>
+        </div>
+        <div class="block-back">
+          <span class="normal-info">This is Block 1 info.</span>
+          <span class="easter-egg-message">You found the Easter Egg!</span>
+        </div>
+      </div>
+    </a>
+    <a class="block" href="./life.html">
+      <div class="block-inner">
+        <div class="block-front">
+          <span>Life</span>
+        </div>
+        <div class="block-back">
+          <span class="normal-info">This is Block 1 info.</span>
+          <span class="easter-egg-message">You found the Easter Egg!</span>
+        </div>
+      </div>
+    </a>
+    <a class="block" href="./contact.html">
+      <div class="block-inner">
+        <div class="block-front">
+          <span>Contact</span>
+        </div>
+        <div class="block-back">
+          <span class="normal-info">This is Block 1 info.</span>
+          <span class="easter-egg-message">You found the Easter Egg!</span>
+        </div>
+      </div>
+    </a>
+    <div class="easter-egg-trigger"></div>
+  </main>
+  <script src="./assets/js/main.js"></script>
+</body>
 </html>

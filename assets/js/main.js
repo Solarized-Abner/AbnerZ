@@ -1,12 +1,6 @@
-const showMenu = (toggleId, navId) => {
-  const toggle = document.getElementById(toggleId),
-    nav = document.getElementById(navId);
-
-  toggle.addEventListener("click", () => {
-    nav.classList.toggle("show-menu");
-
-    toggle.classList.toggle("show-icon");
-  });
-};
-
-showMenu("nav-toggle", "nav-menu");
+document.querySelector('.easter-egg-trigger').addEventListener('mouseenter', function() {
+  document.querySelector('.blocks-container').classList.add('easter-egg');
+});
+document.querySelector('.easter-egg-trigger').addEventListener('mouseleave', function() {
+  document.querySelector('.blocks-container').classList.remove('easter-egg');
+});
