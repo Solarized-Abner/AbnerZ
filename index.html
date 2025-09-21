@@ -1,29 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AbnerZ</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
-
 <body>
-<div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-  <a href="" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
+  <img class="image-gradient" src="./assets/images/gradient.png" alt="gradient">
+  <div class="layer-blur"></div>
 
-<div style="padding-left:16px">
-  <h2>Responsive Topnav Example</h2>
-  <p>Resize the browser window to see how it works.</p>
-</div>
-    <script src="./assets/js/script.js"></script>
+  <div class="container">
+    <header>
+      <h1 data-aos="zoom-in" data-aos-duration="1500" class="logo">AbnerZ</h1>
+
+      <nav>
+        <a data-aos="fade-down" data-aos-duration="1500" href="#">Home</a>
+        <a data-aos="fade-down" data-aos-duration="2000" href="#">About</a>
+        <a data-aos="fade-down" data-aos-duration="2500" href="#">Project</a>
+        <a data-aos="fade-down" data-aos-duration="3000" href="#">Contact</a>
+      </nav>
+
+      <button data-aos="zoom-in" data-aos-duration="1500" class="btn-signing">SIGNING</button>
+    </header>
+
+    <main>
+      <div class="content">
+        <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" data-aos-duration="1500" class="tag-box">
+          <div class="tag">Introduction &wedbar;</div>
+        </div>
+        <h1 data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" data-aos-duration="2000">Email For <br> Developers</h1>
+
+        <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" data-aos-duration="2500" class="description">
+          Abner's personal website(Huge Engineering and Math Nerd)
+        </p>
+
+        <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" data-aos-duration="3000" class="buttons">
+          <a href="#" class="btn-about-me">
+            About
+          </a>
+          <a href="#" class="btn-projects">
+            Projects
+          </a>
+        </div>
+      </div>
+    </main>
+    <spline-viewer data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" data-aos-duration="1500" class="plane-3d" url="https://prod.spline.design/tKa2r23ptqoMyd2Z/scene.splinecode"></spline-viewer>
+  </div>
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.24/build/spline-viewer.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
-
 </html>
