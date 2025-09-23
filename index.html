@@ -1,57 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AbnerZ</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
-<body>
-  <img class="image-gradient" src="./assets/images/gradient.png" alt="gradient">
-  <div class="layer-blur"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aerospace Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+  <body>
+    <section id="hero">
+      <div class="container">
+        <h1>Abner Zhang</h1>
+        <p class="tagline">Aerospace Engineer | Systems Designer | Innovator</p>
+        <a href="#projects" class="btn-glow">View Projects</a>
+      </div>
+    </section>
 
-  <div class="container">
-    <header>
-      <h1 data-aos="zoom-in" data-aos-duration="1500" class="logo">AbnerZ</h1>
-
-      <nav>
-        <a data-aos="fade-down" data-aos-duration="1500" href="index.html">Home</a>
-        <a data-aos="fade-down" data-aos-duration="2000" href="about.html">About</a>
-        <a data-aos="fade-down" data-aos-duration="2500" href="academic.html">Academic</a>
-        <a data-aos="fade-down" data-aos-duration="3000" href="contact.html">Contact</a>
-      </nav>
-
-      <button data-aos="zoom-in" data-aos-duration="1500" class="btn-signing" href="projects.html">Projects</button>
-    </header>
-
-    <main>
-      <div class="content">
-        <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" data-aos-duration="1500" class="tag-box">
-          <div class="tag">Introduction &wedbar;</div>
-        </div>
-        <h1 data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" data-aos-duration="2000">Email For <br> Developers</h1>
-
-        <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" data-aos-duration="2500" class="description">
-          Abner's personal website (Huge Engineering and Math Nerd)
-        </p>
-
-        <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" data-aos-duration="3000" class="buttons">
-          <a href="about.html" class="btn-about-me">
-            About
-          </a>
-          <a href="projects.html" class="btn-projects">
-            Projects
-          </a>
+    <section id="about">
+      <div class="container">
+        <h2 class="about-title">About Me</h2>
+        <div class="about-wrapper">
+          <div class="about-image">
+            <img src="./assets/images/about_me.jpg" alt="Aerospace engineer at work" />
+          </div>
+          <div class="about-text">
+            <p>I am currently a 1st year engineering student at Memorial University, I am a huge fan of Aerospace Engineering and I build model planes and rockets!</p>
+          </div>
         </div>
       </div>
-    </main>
-    <spline-viewer data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" data-aos-duration="1500" class="plane-3d" url="https://prod.spline.design/tKa2r23ptqoMyd2Z/scene.splinecode"></spline-viewer>
-  </div>
-  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.24/build/spline-viewer.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">Programming (Python / C)</div>
+          <div class="skill-card">CDF and Aerodynamics</div>
+          <div class="skill-card">Fusion 360</div>
+          <div class="skill-card">Arduino</div>
+          <div class="skill-card">Robotics</div>
+          <div class="skill-card">Robotics Systems Design</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <div class="project-card" data-project="F35-Plane">
+            <h3>RC controlled airplane</h3>
+            <h4>HIGHLIGHT</h4>
+            <p>A 1:13 small-scale F35b Lighting II with vertical takeoff</p>
+          </div>
+          <div class="project-card" data-project="Live-CDF">
+            <h3>A Working Live CDF</h3>
+            <p>Building a Live CDF out of C with my own physics engine</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          <a href="mailto:yichengz@mun.ca">
+            <i class="fas fa-envelope"></i> yichengz@mun.ca
+          </a>
+        </p>
+        <p>
+          <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          |
+          <a href="https://github.com/Solarized-Abner" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <div id="projectModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>
