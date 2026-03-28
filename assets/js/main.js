@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const projects = {
     "F35-Plane": `
       <h2>RC controlled airplane</h2>
-      <p>This is a project about building a F35b Lighting II with VTOL</p>
+      <p>This is a project about building a F35b Lighting II with VTOL with my partner Eric</p>
       <ul>
         <li>3D Modeling The Frame</li>
         <li>Airfoil Analysis</li>
@@ -18,11 +18,11 @@ document.addEventListener("DOMContentLoaded", () => {
       </ul>
       <br>
       <h3>Tools used:</h3>
-      <p>VSCode, C, Github, Our Big Brain</p>
+      <p>VSCode, C, Github</p>
     `,
     "Live-CDF": `
       <h2>A Working Live CDF</h2>
-      <p>This is a project where me and my buddy build a live CDF that can analyze aerodynamics in real time.</p>
+      <p>This is a project where me and my partner build a live CDF that can analyze aerodynamics in real time.</p>
       <ul>
         <li>Aerodynamic Analysis</li>
         <li>Fluid-dynamic Analysis</li>
@@ -32,7 +32,20 @@ document.addEventListener("DOMContentLoaded", () => {
         <li>3D Live View</li>
       </ul>
       <h3>Tools used:</h3>
-      <p>VSCode, C, Github, Our Big Brain</p>
+      <p>VSCode, C, Github</p>
+    `,
+    "Live-CDF": `
+      <h2>Keep Talking and Nobody Explodes</h2>
+      <p>This is a project where me and my partner Eric, are building a physical replica of the game Keep Talking and Nobody Explodes</p>
+      <ul>
+        <li>Arduino to Python</li>
+        <li>Custom Arduino Firmware</li>
+        <li>Custom SPI OLED Firmware</li>
+        <li>3D modeling</li>
+        <li>PCB Design</li>
+      </ul>
+      <h3>Tools used:</h3>
+      <p>VSCode, Python, Aruino Code, Arduino IDE, Github</p>
     `
   };
 
