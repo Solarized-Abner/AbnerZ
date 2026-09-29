@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeBtn = document.querySelector(".close-btn");
 
   const projects = {
-    "F35-Plane": `
+    "Plane": `
       <h2>RC controlled airplane</h2>
       <p>This is a project about building a F35b Lighting II with VTOL with my partner Eric</p>
       <ul>
@@ -18,7 +18,23 @@ document.addEventListener("DOMContentLoaded", () => {
       </ul>
       <br>
       <h3>Tools used:</h3>
-      <p>VSCode, C, Github</p>
+      <p>VSCode, C, Github, AirfoilTools, XFLR5, Fusion 360</p>
+    `,
+    "Drone": `
+      <h2>A Custom Build Drone</h2>
+      <p>This is a project about building a custom drone with my partner Eric</p>
+      <ul>
+        <li>3D Modeling The Frame</li>
+        <li>Airfoil Analysis</li>
+        <li>Custom Build Flight Controller</li>
+        <li>Material Decision</li>
+        <li>Actually Building The Drone</li>
+        <li>Test Flight</li>
+        <li>Maiden Flight</li>
+      </ul>
+      <br>
+      <h3>Tools used:</h3>
+      <p>VSCode, C, Github, Matlab, Onshape</p>
     `,
     "Live-CDF": `
       <h2>A Working Live CDF</h2>
@@ -34,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <h3>Tools used:</h3>
       <p>VSCode, C, Github</p>
     `,
-    "Live-CDF": `
+    "Keep-Talking": `
       <h2>Keep Talking and Nobody Explodes</h2>
       <p>This is a project where me and my partner Eric, are building a physical replica of the game Keep Talking and Nobody Explodes</p>
       <ul>
