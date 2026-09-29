@@ -67,8 +67,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll(".project-card").forEach(card => {
     card.addEventListener("click", () => {
-      const projectKey = card.getAttribute("data-project");
-      modalBody.innerHTML = projects[projectKey];
+      const projectKey = card.dataset.project;
+      const projectContent = projects[projectKey];
+
+      console.log("Clicked project:", projectKey);
+
+      if (!projectContent) {
+        console.error("No project content found for:", projectKey);
+        modalBody.innerHTML = `
+          <h2>Project unavailable</h2>
+          <p>No project details were found for "${projectKey}".</p>
+        `;
+      } else {
+        modalBody.innerHTML = projectContent;
+      }
+
       modal.style.display = "flex";
     });
   });
